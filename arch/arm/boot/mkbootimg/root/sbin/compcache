@@ -1,0 +1,4 @@
+#!/system/bin/sh
+/sbin/rzscontrol /dev/block/ramzswap0 --disksize_kb=32768 --init
+busybox swapon /dev/block/ramzswap0
+echo 30 > /proc/sys/vm/swappiness
