@@ -1,0 +1,37 @@
+         SOFTWARE LICENCE AGREEMENT FOR UNIFI LINUX DRIVER SOURCE CODE
+
+By receiving this software, the customer (YOU) accepts the terms and
+conditions herein.
+
+GRANT OF LICENCE
+Cambridge Silicon Radio Limited, hereafter referred to as CSR, grants
+YOU a worldwide royalty-free nonexclusive licence to use and
+distribute this software including source code under the following
+conditions:
+1) The source will only be used in conjunction with projects that
+   use CSR UniFi chips.
+2) YOU will provide the source code of any bug fixes to the software
+   back to CSR under the same terms as to which CSR provides the
+   original software to YOU.
+3) CSR does not accept liability for any bugs in the software.
+
+LIMITATION OF LIABILITY
+CSR makes no warranties as to the fitness for purpose, merchantability
+or function of this software. CSR accepts no responsibility for the use
+of the software. CSR accepts no liability for consequential loss. CSR
+does not warrant or provide any indemnification with respect to
+intellectual property infringement claims for third party claims.
+
+EXTENTS
+Where there are other agreements between YOU and CSR, the restrictions
+imposed by the other agreements shall be additive, and where there is
+conflict between agreements, any restrictions in agreements shall take
+precedence over grants made by this agreement, with the specific
+exception of other agreements granting distribution rights over this
+software.
+
+GOVERNING LAW
+These Terms and the supply of the Products by CSR are governed by
+English law, and YOU agree to resolve all disputes exclusively in the
+English Courts, but without prejudice to our right to seek injunctive or
+other relief in any court of competent jurisdiction world-wide.

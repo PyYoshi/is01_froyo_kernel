@@ -68,15 +68,17 @@
 #define SHTHERM_API_GET_PA_TEMPERATURE_REMOTE_PROC 6
 #define SHTHERM_API_GET_PMIC_TEMPERATURE_REMOTE_PROC 7
 
-#ifdef SH_BATTERY_TRACE
+
+//#ifdef SH_BATTERY_TRACE
 
 #define TRACE(x...) printk(KERN_INFO "[SH_BATTERY] " x)
 
-#else
+//#else
 
-#define TRACE(x...) do {} while(0)
+//#define TRACE(x...) do {} while(0)
 
-#endif /* SH_BATTERY_TRACE */
+//#endif /* SH_BATTERY_TRACE */
+
 
 #define SH_BATTERY_ATTR(_name)							           \
 {                                                                  \
@@ -341,6 +343,8 @@ static ssize_t sh_battery_show_property( struct device* dev,
   else if(property == SH_BATTERY_PROPERTY_CAPACITY)
   {
     size = sprintf(buf,"%d\n",sh_battery_battery_capacity);
+    printk(KERN_INFO "size: %d\n",size);
+    printk(KERN_INFO "sh_battery_battery_capacity: %d\n",sh_battery_battery_capacity);
     TRACE("/battery/capacity = %d\n",sh_battery_battery_capacity);
   }
   else if(property == SH_BATTERY_PROPERTY_BATT_VOL)
@@ -891,6 +895,10 @@ static int sh_battery_probe( struct platform_device* dev_p )
                               &req_t1,sizeof(req_t1),
                               &rep_t1,sizeof(rep_t1),
                               5 * HZ);
+  printk(KERN_INFO "sizeof(rep_t1): %d\n",sizeof(rep_t1));
+  printk(KERN_INFO "sizeof(req_t1): %d\n",sizeof(req_t1));
+  printk(KERN_INFO "msm_rpc_call_reply(ep_shbatt_p SHBATT_API_GET_BATTERY_CAPACITY_REMOTE_PROC, &req_t1,sizeof(req_t1),&rep_t1,sizeof(rep_t1),5 * HZ);: %d\n",result);
+
   if(result < 0)
   {
     TRACE("%s : get battery capacity failed. rc = %ld\n",__FUNCTION__,PTR_ERR(ep_shbatt_p));
@@ -899,6 +907,8 @@ static int sh_battery_probe( struct platform_device* dev_p )
   else
   {
     sh_battery_battery_capacity = be32_to_cpu(rep_t1.value);
+    printk(KERN_INFO "rep_t1.value: %d\n",rep_t1.value);
+    printk(KERN_INFO "sh_battery_battery_capacity: %d\n",sh_battery_battery_capacity);
   }
 
   for(i = 0; i < ARRAY_SIZE(sh_battery_power_supplies); i++)
@@ -1001,7 +1011,11 @@ static void sh_battery_update_battery_capacity( int capacity )
 {
   TRACE("%s(%d) \n",__FUNCTION__,capacity);
 
+  printk(KERN_INFO "capacity: %d\n",capacity);
+
   sh_battery_battery_capacity = capacity;
+
+  printk(KERN_INFO "sh_battery_battery_capacity: %d\n",sh_battery_battery_capacity);
 
   power_supply_changed(&sh_battery_power_supplies[BATTERY]);
 }

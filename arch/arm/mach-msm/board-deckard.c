@@ -1993,8 +1993,11 @@ static u32 msm_calculate_batt_capacity(u32 current_voltage)
 	u32 low_voltage   = msm_psy_batt_data.voltage_min_design;
 	u32 high_voltage  = msm_psy_batt_data.voltage_max_design;
 
-	return (current_voltage - low_voltage) * 100
-		/ (high_voltage - low_voltage);
+	printk(KERN_INFO "(current_voltage: %d\n",current_voltage);
+	printk(KERN_INFO "(low_voltage: %d\n",low_voltage);
+	printk(KERN_INFO "(high_voltage: %d\n",high_voltage);
+
+	return (current_voltage - low_voltage) * 100 / (high_voltage - low_voltage);
 }
 
 static struct platform_device msm_batt_device = {

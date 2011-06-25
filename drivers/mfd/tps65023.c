@@ -147,6 +147,7 @@ int tps65023_set_dcdc1_level(int mvolts)
 	if (!ret)
 		ret = i2c_smbus_write_byte_data(tpsclient,
 				TPS65023_CON_CTRL2, 0x80);
+printk(KERN_INFO "tps65023.c tps65023_set_dcdc1_level val: %d\n",val);
 
 	return ret;
 }
@@ -161,10 +162,15 @@ int tps65023_get_dcdc1_level(int *mvolts)
 
 	val = i2c_smbus_read_byte_data(tpsclient, TPS65023_DEFCORE) & 0x1F;
 
+printk(KERN_INFO "tps65023_get_dcdc1_level val: %d\n",val);
+
 	if (val == 0x1F)
 		*mvolts = 1600;
 	else
 		*mvolts = (val * 25) + 800;
+
+printk(KERN_INFO "tps65023_get_dcdc1_level *mvolts: %d\n",*mvolts);
+
 	return 0;
 }
 EXPORT_SYMBOL(tps65023_get_dcdc1_level);
