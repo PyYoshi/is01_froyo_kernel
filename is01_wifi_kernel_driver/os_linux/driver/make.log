@@ -1,0 +1,320 @@
+/bin/sh: Can't open /home/layna/android/is01_hacked_rom/is01_wifi_kernel_driver/os_linux/driver/scripts/gcc-version.sh
+cc1: error: include/linux/autoconf.h: No such file or directory
+In file included from include/linux/prefetch.h:14,
+                 from include/linux/list.h:6,
+                 from include/linux/module.h:9,
+                 from /home/layna/android/is01_hacked_rom/is01_wifi_kernel_driver/os_linux/driver/../../os_linux/driver/sdio_mmc.c:12:
+/home/layna/android/is01_hacked_rom/is01_froyo_kernel/arch/arm/include/asm/processor.h:109:5: error: "__LINUX_ARM_ARCH__" is not defined
+In file included from /home/layna/android/is01_hacked_rom/is01_froyo_kernel/arch/arm/include/asm/system.h:6,
+                 from include/linux/list.h:7,
+                 from include/linux/module.h:9,
+                 from /home/layna/android/is01_hacked_rom/is01_wifi_kernel_driver/os_linux/driver/../../os_linux/driver/sdio_mmc.c:12:
+/home/layna/android/is01_hacked_rom/is01_froyo_kernel/arch/arm/include/asm/memory.h:18:25: error: mach/memory.h: No such file or directory
+In file included from /home/layna/android/is01_hacked_rom/is01_froyo_kernel/arch/arm/include/asm/system.h:6,
+                 from include/linux/list.h:7,
+                 from include/linux/module.h:9,
+                 from /home/layna/android/is01_hacked_rom/is01_wifi_kernel_driver/os_linux/driver/../../os_linux/driver/sdio_mmc.c:12:
+/home/layna/android/is01_hacked_rom/is01_froyo_kernel/arch/arm/include/asm/memory.h: In function 'virt_to_phys':
+/home/layna/android/is01_hacked_rom/is01_froyo_kernel/arch/arm/include/asm/memory.h:160: error: 'CONFIG_DRAM_BASE' undeclared (first use in this function)
+/home/layna/android/is01_hacked_rom/is01_froyo_kernel/arch/arm/include/asm/memory.h:160: error: (Each undeclared identifier is reported only once
+/home/layna/android/is01_hacked_rom/is01_froyo_kernel/arch/arm/include/asm/memory.h:160: error: for each function it appears in.)
+/home/layna/android/is01_hacked_rom/is01_froyo_kernel/arch/arm/include/asm/memory.h: In function 'phys_to_virt':
+/home/layna/android/is01_hacked_rom/is01_froyo_kernel/arch/arm/include/asm/memory.h:165: error: 'CONFIG_DRAM_BASE' undeclared (first use in this function)
+/home/layna/android/is01_hacked_rom/is01_froyo_kernel/arch/arm/include/asm/memory.h: In function 'virt_to_bus':
+/home/layna/android/is01_hacked_rom/is01_froyo_kernel/arch/arm/include/asm/memory.h:188: error: 'CONFIG_DRAM_BASE' undeclared (first use in this function)
+/home/layna/android/is01_hacked_rom/is01_froyo_kernel/arch/arm/include/asm/memory.h: In function 'bus_to_virt':
+/home/layna/android/is01_hacked_rom/is01_froyo_kernel/arch/arm/include/asm/memory.h:193: error: 'CONFIG_DRAM_BASE' undeclared (first use in this function)
+In file included from include/linux/list.h:7,
+                 from include/linux/module.h:9,
+                 from /home/layna/android/is01_hacked_rom/is01_wifi_kernel_driver/os_linux/driver/../../os_linux/driver/sdio_mmc.c:12:
+/home/layna/android/is01_hacked_rom/is01_froyo_kernel/arch/arm/include/asm/system.h:113:5: error: "__LINUX_ARM_ARCH__" is not defined
+/home/layna/android/is01_hacked_rom/is01_froyo_kernel/arch/arm/include/asm/system.h:123:5: error: "__LINUX_ARM_ARCH__" is not defined
+/home/layna/android/is01_hacked_rom/is01_froyo_kernel/arch/arm/include/asm/system.h:127:35: error: "__LINUX_ARM_ARCH__" is not defined
+/home/layna/android/is01_hacked_rom/is01_froyo_kernel/arch/arm/include/asm/system.h:248:5: error: "__LINUX_ARM_ARCH__" is not defined
+/home/layna/android/is01_hacked_rom/is01_froyo_kernel/arch/arm/include/asm/system.h:253:5: error: "__LINUX_ARM_ARCH__" is not defined
+In file included from /home/layna/android/is01_hacked_rom/is01_froyo_kernel/arch/arm/include/asm/system.h:318,
+                 from include/linux/list.h:7,
+                 from include/linux/module.h:9,
+                 from /home/layna/android/is01_hacked_rom/is01_wifi_kernel_driver/os_linux/driver/../../os_linux/driver/sdio_mmc.c:12:
+include/asm-generic/cmpxchg-local.h: In function '__cmpxchg_local_generic':
+include/asm-generic/cmpxchg-local.h:23: error: implicit declaration of function 'local_irq_save'
+include/asm-generic/cmpxchg-local.h:44: error: implicit declaration of function 'local_irq_restore'
+In file included from include/linux/bitops.h:17,
+                 from include/linux/kernel.h:15,
+                 from include/linux/cache.h:4,
+                 from include/linux/time.h:7,
+                 from include/linux/stat.h:60,
+                 from include/linux/module.h:10,
+                 from /home/layna/android/is01_hacked_rom/is01_wifi_kernel_driver/os_linux/driver/../../os_linux/driver/sdio_mmc.c:12:
+/home/layna/android/is01_hacked_rom/is01_froyo_kernel/arch/arm/include/asm/bitops.h:237:5: error: "__LINUX_ARM_ARCH__" is not defined
+In file included from /home/layna/android/is01_hacked_rom/is01_froyo_kernel/arch/arm/include/asm/thread_info.h:16,
+                 from include/linux/thread_info.h:55,
+                 from include/linux/preempt.h:9,
+                 from include/linux/spinlock.h:50,
+                 from include/linux/seqlock.h:29,
+                 from include/linux/time.h:8,
+                 from include/linux/stat.h:60,
+                 from include/linux/module.h:10,
+                 from /home/layna/android/is01_hacked_rom/is01_wifi_kernel_driver/os_linux/driver/../../os_linux/driver/sdio_mmc.c:12:
+/home/layna/android/is01_hacked_rom/is01_froyo_kernel/arch/arm/include/asm/fpstate.h:32:5: error: "__LINUX_ARM_ARCH__" is not defined
+In file included from include/linux/spinlock.h:353,
+                 from include/linux/seqlock.h:29,
+                 from include/linux/time.h:8,
+                 from include/linux/stat.h:60,
+                 from include/linux/module.h:10,
+                 from /home/layna/android/is01_hacked_rom/is01_wifi_kernel_driver/os_linux/driver/../../os_linux/driver/sdio_mmc.c:12:
+/home/layna/android/is01_hacked_rom/is01_froyo_kernel/arch/arm/include/asm/atomic.h:24:5: error: "__LINUX_ARM_ARCH__" is not defined
+In file included from include/linux/time.h:9,
+                 from include/linux/stat.h:60,
+                 from include/linux/module.h:10,
+                 from /home/layna/android/is01_hacked_rom/is01_wifi_kernel_driver/os_linux/driver/../../os_linux/driver/sdio_mmc.c:12:
+include/linux/math64.h: In function 'div_u64_rem':
+include/linux/math64.h:43: error: '__LINUX_ARM_ARCH__' undeclared (first use in this function)
+In file included from include/linux/gfp.h:4,
+                 from include/linux/kmod.h:22,
+                 from include/linux/module.h:13,
+                 from /home/layna/android/is01_hacked_rom/is01_wifi_kernel_driver/os_linux/driver/../../os_linux/driver/sdio_mmc.c:12:
+include/linux/mmzone.h:18:26: error: linux/bounds.h: No such file or directory
+include/linux/mmzone.h:256:5: error: "MAX_NR_ZONES" is not defined
+In file included from include/linux/gfp.h:4,
+                 from include/linux/kmod.h:22,
+                 from include/linux/module.h:13,
+                 from /home/layna/android/is01_hacked_rom/is01_wifi_kernel_driver/os_linux/driver/../../os_linux/driver/sdio_mmc.c:12:
+include/linux/mmzone.h: At top level:
+include/linux/mmzone.h:290: error: 'MAX_NR_ZONES' undeclared here (not in a function)
+In file included from include/linux/notifier.h:14,
+                 from include/linux/memory_hotplug.h:6,
+                 from include/linux/mmzone.h:645,
+                 from include/linux/gfp.h:4,
+                 from include/linux/kmod.h:22,
+                 from include/linux/module.h:13,
+                 from /home/layna/android/is01_hacked_rom/is01_wifi_kernel_driver/os_linux/driver/../../os_linux/driver/sdio_mmc.c:12:
+include/linux/rwsem.h:22:65: error: asm/rwsem.h: No such file or directory
+In file included from include/linux/memory_hotplug.h:6,
+                 from include/linux/mmzone.h:645,
+                 from include/linux/gfp.h:4,
+                 from include/linux/kmod.h:22,
+                 from include/linux/module.h:13,
+                 from /home/layna/android/is01_hacked_rom/is01_wifi_kernel_driver/os_linux/driver/../../os_linux/driver/sdio_mmc.c:12:
+include/linux/notifier.h:62: error: field 'rwsem' has incomplete type
+In file included from include/linux/tracepoint.h:18,
+                 from include/linux/module.h:19,
+                 from /home/layna/android/is01_hacked_rom/is01_wifi_kernel_driver/os_linux/driver/../../os_linux/driver/sdio_mmc.c:12:
+include/linux/rcupdate.h:65:2: error: #error "Unknown RCU implementation specified to kernel configuration"
+In file included from include/linux/module.h:19,
+                 from /home/layna/android/is01_hacked_rom/is01_wifi_kernel_driver/os_linux/driver/../../os_linux/driver/sdio_mmc.c:12:
+include/linux/tracepoint.h: In function 'tracepoint_synchronize_unregister':
+include/linux/tracepoint.h:153: error: implicit declaration of function '__synchronize_sched'
+In file included from include/linux/irqnr.h:10,
+                 from include/linux/interrupt.h:11,
+                 from include/linux/mmc/core.h:11,
+                 from /home/layna/android/is01_hacked_rom/is01_wifi_kernel_driver/os_linux/driver/../../os_linux/driver/sdio_mmc.c:18:
+/home/layna/android/is01_hacked_rom/is01_froyo_kernel/arch/arm/include/asm/irq.h:4:23: error: mach/irqs.h: No such file or directory
+In file included from include/linux/hardirq.h:8,
+                 from include/linux/interrupt.h:12,
+                 from include/linux/mmc/core.h:11,
+                 from /home/layna/android/is01_hacked_rom/is01_wifi_kernel_driver/os_linux/driver/../../os_linux/driver/sdio_mmc.c:18:
+/home/layna/android/is01_hacked_rom/is01_froyo_kernel/arch/arm/include/asm/hardirq.h:15:5: error: "NR_IRQS" is not defined
+/home/layna/android/is01_hacked_rom/is01_froyo_kernel/arch/arm/include/asm/hardirq.h:26:27: error: "NR_IRQS" is not defined
+In file included from include/linux/timex.h:170,
+                 from include/linux/sched.h:54,
+                 from include/linux/interrupt.h:13,
+                 from include/linux/mmc/core.h:11,
+                 from /home/layna/android/is01_hacked_rom/is01_wifi_kernel_driver/os_linux/driver/../../os_linux/driver/sdio_mmc.c:18:
+/home/layna/android/is01_hacked_rom/is01_froyo_kernel/arch/arm/include/asm/timex.h:15:24: error: mach/timex.h: No such file or directory
+In file included from include/linux/sched.h:55,
+                 from include/linux/interrupt.h:13,
+                 from include/linux/mmc/core.h:11,
+                 from /home/layna/android/is01_hacked_rom/is01_wifi_kernel_driver/os_linux/driver/../../os_linux/driver/sdio_mmc.c:18:
+include/linux/jiffies.h:18:5: error: "CONFIG_HZ" is not defined
+include/linux/jiffies.h:20:7: error: "CONFIG_HZ" is not defined
+include/linux/jiffies.h:22:7: error: "CONFIG_HZ" is not defined
+include/linux/jiffies.h:24:7: error: "CONFIG_HZ" is not defined
+include/linux/jiffies.h:26:7: error: "CONFIG_HZ" is not defined
+include/linux/jiffies.h:28:7: error: "CONFIG_HZ" is not defined
+include/linux/jiffies.h:30:7: error: "CONFIG_HZ" is not defined
+include/linux/jiffies.h:32:7: error: "CONFIG_HZ" is not defined
+include/linux/jiffies.h:34:7: error: "CONFIG_HZ" is not defined
+include/linux/jiffies.h:36:7: error: "CONFIG_HZ" is not defined
+include/linux/jiffies.h:39:3: error: #error Invalid value of HZ.
+include/linux/jiffies.h:257:31: error: "CLOCK_TICK_RATE" is not defined
+include/linux/jiffies.h:257:31: error: "CLOCK_TICK_RATE" is not defined
+include/linux/jiffies.h:257:31: error: "CONFIG_HZ" is not defined
+include/linux/jiffies.h:257:31: error: "CONFIG_HZ" is not defined
+include/linux/jiffies.h:257:31: error: division by zero in #if
+include/linux/jiffies.h:257:31: error: division by zero in #if
+include/linux/jiffies.h:257:31: error: "CLOCK_TICK_RATE" is not defined
+include/linux/jiffies.h:257:31: error: "CLOCK_TICK_RATE" is not defined
+include/linux/jiffies.h:257:31: error: "CONFIG_HZ" is not defined
+include/linux/jiffies.h:257:31: error: "CONFIG_HZ" is not defined
+include/linux/jiffies.h:257:31: error: division by zero in #if
+include/linux/jiffies.h:257:31: error: division by zero in #if
+include/linux/jiffies.h:257:31: error: "CLOCK_TICK_RATE" is not defined
+include/linux/jiffies.h:257:31: error: "CONFIG_HZ" is not defined
+include/linux/jiffies.h:257:31: error: "CONFIG_HZ" is not defined
+include/linux/jiffies.h:257:31: error: division by zero in #if
+include/linux/jiffies.h:257:31: error: "CLOCK_TICK_RATE" is not defined
+include/linux/jiffies.h:257:31: error: "CONFIG_HZ" is not defined
+include/linux/jiffies.h:257:31: error: "CONFIG_HZ" is not defined
+include/linux/jiffies.h:257:31: error: division by zero in #if
+include/linux/jiffies.h:257:31: error: division by zero in #if
+include/linux/jiffies.h:257:31: error: division by zero in #if
+include/linux/jiffies.h:257:31: error: "CLOCK_TICK_RATE" is not defined
+include/linux/jiffies.h:257:31: error: "CLOCK_TICK_RATE" is not defined
+include/linux/jiffies.h:257:31: error: "CONFIG_HZ" is not defined
+include/linux/jiffies.h:257:31: error: "CONFIG_HZ" is not defined
+include/linux/jiffies.h:257:31: error: division by zero in #if
+include/linux/jiffies.h:257:31: error: division by zero in #if
+include/linux/jiffies.h:257:31: error: "CLOCK_TICK_RATE" is not defined
+include/linux/jiffies.h:257:31: error: "CLOCK_TICK_RATE" is not defined
+include/linux/jiffies.h:257:31: error: "CONFIG_HZ" is not defined
+include/linux/jiffies.h:257:31: error: "CONFIG_HZ" is not defined
+include/linux/jiffies.h:257:31: error: division by zero in #if
+include/linux/jiffies.h:257:31: error: division by zero in #if
+include/linux/jiffies.h:257:31: error: "CLOCK_TICK_RATE" is not defined
+include/linux/jiffies.h:257:31: error: "CONFIG_HZ" is not defined
+include/linux/jiffies.h:257:31: error: "CONFIG_HZ" is not defined
+include/linux/jiffies.h:257:31: error: division by zero in #if
+include/linux/jiffies.h:257:31: error: "CLOCK_TICK_RATE" is not defined
+include/linux/jiffies.h:257:31: error: "CONFIG_HZ" is not defined
+include/linux/jiffies.h:257:31: error: "CONFIG_HZ" is not defined
+include/linux/jiffies.h:257:31: error: division by zero in #if
+include/linux/jiffies.h:257:31: error: division by zero in #if
+include/linux/jiffies.h:257:31: error: division by zero in #if
+include/linux/jiffies.h:257:31: error: "CLOCK_TICK_RATE" is not defined
+include/linux/jiffies.h:257:31: error: "CLOCK_TICK_RATE" is not defined
+include/linux/jiffies.h:257:31: error: "CONFIG_HZ" is not defined
+include/linux/jiffies.h:257:31: error: "CONFIG_HZ" is not defined
+include/linux/jiffies.h:257:31: error: division by zero in #if
+include/linux/jiffies.h:257:31: error: division by zero in #if
+include/linux/jiffies.h:257:31: error: "CLOCK_TICK_RATE" is not defined
+include/linux/jiffies.h:257:31: error: "CLOCK_TICK_RATE" is not defined
+include/linux/jiffies.h:257:31: error: "CONFIG_HZ" is not defined
+include/linux/jiffies.h:257:31: error: "CONFIG_HZ" is not defined
+include/linux/jiffies.h:257:31: error: division by zero in #if
+include/linux/jiffies.h:257:31: error: division by zero in #if
+include/linux/jiffies.h:257:31: error: "CLOCK_TICK_RATE" is not defined
+include/linux/jiffies.h:257:31: error: "CONFIG_HZ" is not defined
+include/linux/jiffies.h:257:31: error: "CONFIG_HZ" is not defined
+include/linux/jiffies.h:257:31: error: division by zero in #if
+include/linux/jiffies.h:257:31: error: "CLOCK_TICK_RATE" is not defined
+include/linux/jiffies.h:257:31: error: "CONFIG_HZ" is not defined
+include/linux/jiffies.h:257:31: error: "CONFIG_HZ" is not defined
+include/linux/jiffies.h:257:31: error: division by zero in #if
+include/linux/jiffies.h:257:31: error: division by zero in #if
+include/linux/jiffies.h:257:31: error: "CLOCK_TICK_RATE" is not defined
+include/linux/jiffies.h:257:31: error: "CLOCK_TICK_RATE" is not defined
+include/linux/jiffies.h:257:31: error: "CONFIG_HZ" is not defined
+include/linux/jiffies.h:257:31: error: "CONFIG_HZ" is not defined
+include/linux/jiffies.h:257:31: error: division by zero in #if
+include/linux/jiffies.h:257:31: error: division by zero in #if
+include/linux/jiffies.h:257:31: error: "CLOCK_TICK_RATE" is not defined
+include/linux/jiffies.h:257:31: error: "CLOCK_TICK_RATE" is not defined
+include/linux/jiffies.h:257:31: error: "CONFIG_HZ" is not defined
+include/linux/jiffies.h:257:31: error: "CONFIG_HZ" is not defined
+include/linux/jiffies.h:257:31: error: division by zero in #if
+include/linux/jiffies.h:257:31: error: division by zero in #if
+include/linux/jiffies.h:257:31: error: "CLOCK_TICK_RATE" is not defined
+include/linux/jiffies.h:257:31: error: "CONFIG_HZ" is not defined
+include/linux/jiffies.h:257:31: error: "CONFIG_HZ" is not defined
+include/linux/jiffies.h:257:31: error: division by zero in #if
+include/linux/jiffies.h:257:31: error: "CLOCK_TICK_RATE" is not defined
+include/linux/jiffies.h:257:31: error: "CONFIG_HZ" is not defined
+include/linux/jiffies.h:257:31: error: "CONFIG_HZ" is not defined
+include/linux/jiffies.h:257:31: error: division by zero in #if
+include/linux/jiffies.h:257:31: error: division by zero in #if
+include/linux/jiffies.h:257:31: error: division by zero in #if
+include/linux/jiffies.h:257:46: error: "SHIFT_HZ" is not defined
+In file included from include/linux/sched.h:61,
+                 from include/linux/interrupt.h:13,
+                 from include/linux/mmc/core.h:11,
+                 from /home/layna/android/is01_hacked_rom/is01_wifi_kernel_driver/os_linux/driver/../../os_linux/driver/sdio_mmc.c:18:
+include/linux/mm_types.h:26:5: error: "CONFIG_SPLIT_PTLOCK_CPUS" is not defined
+include/linux/mm_types.h:70:5: error: "CONFIG_SPLIT_PTLOCK_CPUS" is not defined
+In file included from include/linux/sched.h:61,
+                 from include/linux/interrupt.h:13,
+                 from include/linux/mmc/core.h:11,
+                 from /home/layna/android/is01_hacked_rom/is01_wifi_kernel_driver/os_linux/driver/../../os_linux/driver/sdio_mmc.c:18:
+include/linux/mm_types.h: At top level:
+include/linux/mm_types.h:206: error: field 'mmap_sem' has incomplete type
+In file included from include/linux/interrupt.h:13,
+                 from include/linux/mmc/core.h:11,
+                 from /home/layna/android/is01_hacked_rom/is01_wifi_kernel_driver/os_linux/driver/../../os_linux/driver/sdio_mmc.c:18:
+include/linux/sched.h:356:5: error: "CONFIG_SPLIT_PTLOCK_CPUS" is not defined
+In file included from /home/layna/android/is01_hacked_rom/is01_wifi_kernel_driver/os_linux/driver/../../os_linux/driver/sdio_mmc.c:25:
+/home/layna/android/is01_hacked_rom/is01_wifi_kernel_driver/os_linux/driver/../../os_linux/driver/unifi_priv.h:20:27: error: linux/version.h: No such file or directory
+In file included from /home/layna/android/is01_hacked_rom/is01_wifi_kernel_driver/os_linux/driver/../../os_linux/driver/unifi_priv.h:27,
+                 from /home/layna/android/is01_hacked_rom/is01_wifi_kernel_driver/os_linux/driver/../../os_linux/driver/sdio_mmc.c:25:
+include/linux/delay.h: In function 'ndelay':
+include/linux/delay.h:39: error: 'CONFIG_HZ' undeclared (first use in this function)
+/home/layna/android/is01_hacked_rom/is01_wifi_kernel_driver/os_linux/driver/../../os_linux/driver/unifi_priv.h:32:5: error: "LINUX_VERSION_CODE" is not defined
+/home/layna/android/is01_hacked_rom/is01_wifi_kernel_driver/os_linux/driver/../../os_linux/driver/unifi_priv.h:32:26: error: "KERNEL_VERSION" is not defined
+/home/layna/android/is01_hacked_rom/is01_wifi_kernel_driver/os_linux/driver/../../os_linux/driver/unifi_priv.h:32:40: error: missing binary operator before token "("
+In file included from include/linux/fs.h:399,
+                 from /home/layna/android/is01_hacked_rom/is01_wifi_kernel_driver/os_linux/driver/../../os_linux/driver/unifi_priv.h:36,
+                 from /home/layna/android/is01_hacked_rom/is01_wifi_kernel_driver/os_linux/driver/../../os_linux/driver/sdio_mmc.c:25:
+include/linux/quota.h: At top level:
+include/linux/quota.h:376: error: field 'dqptr_sem' has incomplete type
+In file included from /home/layna/android/is01_hacked_rom/is01_wifi_kernel_driver/os_linux/driver/../../os_linux/driver/unifi_priv.h:36,
+                 from /home/layna/android/is01_hacked_rom/is01_wifi_kernel_driver/os_linux/driver/../../os_linux/driver/sdio_mmc.c:25:
+include/linux/fs.h:674: error: field 'i_alloc_sem' has incomplete type
+In file included from /home/layna/android/is01_hacked_rom/is01_wifi_kernel_driver/os_linux/driver/../../os_linux/driver/unifi_priv.h:36,
+                 from /home/layna/android/is01_hacked_rom/is01_wifi_kernel_driver/os_linux/driver/../../os_linux/driver/sdio_mmc.c:25:
+include/linux/fs.h:1147: error: field 's_umount' has incomplete type
+In file included from /home/layna/android/is01_hacked_rom/is01_wifi_kernel_driver/os_linux/driver/../../os_linux/driver/unifi_priv.h:56,
+                 from /home/layna/android/is01_hacked_rom/is01_wifi_kernel_driver/os_linux/driver/../../os_linux/driver/sdio_mmc.c:25:
+/home/layna/android/is01_hacked_rom/is01_wifi_kernel_driver/os_linux/driver/../../os_linux/driver/unifi_wext.h:71:5: error: "LINUX_VERSION_CODE" is not defined
+/home/layna/android/is01_hacked_rom/is01_wifi_kernel_driver/os_linux/driver/../../os_linux/driver/unifi_wext.h:71:27: error: "KERNEL_VERSION" is not defined
+/home/layna/android/is01_hacked_rom/is01_wifi_kernel_driver/os_linux/driver/../../os_linux/driver/unifi_wext.h:71:41: error: missing binary operator before token "("
+cc1: warnings being treated as errors
+In file included from /home/layna/android/is01_hacked_rom/is01_wifi_kernel_driver/os_linux/driver/../../os_linux/driver/unifi_priv.h:56,
+                 from /home/layna/android/is01_hacked_rom/is01_wifi_kernel_driver/os_linux/driver/../../os_linux/driver/sdio_mmc.c:25:
+/home/layna/android/is01_hacked_rom/is01_wifi_kernel_driver/os_linux/driver/../../os_linux/driver/unifi_wext.h: In function 'uf_iwe_stream_add_point':
+/home/layna/android/is01_hacked_rom/is01_wifi_kernel_driver/os_linux/driver/../../os_linux/driver/unifi_wext.h:74: warning: passing argument 1 of 'iwe_stream_add_point' from incompatible pointer type
+/home/layna/android/is01_hacked_rom/is01_wifi_kernel_driver/os_linux/driver/../../os_linux/driver/unifi_wext.h:74: warning: passing argument 3 of 'iwe_stream_add_point' from incompatible pointer type
+/home/layna/android/is01_hacked_rom/is01_wifi_kernel_driver/os_linux/driver/../../os_linux/driver/unifi_wext.h:74: warning: passing argument 4 of 'iwe_stream_add_point' from incompatible pointer type
+/home/layna/android/is01_hacked_rom/is01_wifi_kernel_driver/os_linux/driver/../../os_linux/driver/unifi_wext.h:74: error: too few arguments to function 'iwe_stream_add_point'
+/home/layna/android/is01_hacked_rom/is01_wifi_kernel_driver/os_linux/driver/../../os_linux/driver/unifi_wext.h:91:5: error: "LINUX_VERSION_CODE" is not defined
+/home/layna/android/is01_hacked_rom/is01_wifi_kernel_driver/os_linux/driver/../../os_linux/driver/unifi_wext.h:91:27: error: "KERNEL_VERSION" is not defined
+/home/layna/android/is01_hacked_rom/is01_wifi_kernel_driver/os_linux/driver/../../os_linux/driver/unifi_wext.h:91:41: error: missing binary operator before token "("
+/home/layna/android/is01_hacked_rom/is01_wifi_kernel_driver/os_linux/driver/../../os_linux/driver/unifi_wext.h: In function 'uf_iwe_stream_add_event':
+/home/layna/android/is01_hacked_rom/is01_wifi_kernel_driver/os_linux/driver/../../os_linux/driver/unifi_wext.h:94: warning: passing argument 1 of 'iwe_stream_add_event' from incompatible pointer type
+/home/layna/android/is01_hacked_rom/is01_wifi_kernel_driver/os_linux/driver/../../os_linux/driver/unifi_wext.h:94: warning: passing argument 3 of 'iwe_stream_add_event' from incompatible pointer type
+/home/layna/android/is01_hacked_rom/is01_wifi_kernel_driver/os_linux/driver/../../os_linux/driver/unifi_wext.h:94: warning: passing argument 4 of 'iwe_stream_add_event' makes pointer from integer without a cast
+/home/layna/android/is01_hacked_rom/is01_wifi_kernel_driver/os_linux/driver/../../os_linux/driver/unifi_wext.h:94: error: too few arguments to function 'iwe_stream_add_event'
+/home/layna/android/is01_hacked_rom/is01_wifi_kernel_driver/os_linux/driver/../../os_linux/driver/unifi_wext.h:109:5: error: "LINUX_VERSION_CODE" is not defined
+/home/layna/android/is01_hacked_rom/is01_wifi_kernel_driver/os_linux/driver/../../os_linux/driver/unifi_wext.h:109:27: error: "KERNEL_VERSION" is not defined
+/home/layna/android/is01_hacked_rom/is01_wifi_kernel_driver/os_linux/driver/../../os_linux/driver/unifi_wext.h:109:41: error: missing binary operator before token "("
+/home/layna/android/is01_hacked_rom/is01_wifi_kernel_driver/os_linux/driver/../../os_linux/driver/unifi_wext.h: In function 'uf_iwe_stream_add_value':
+/home/layna/android/is01_hacked_rom/is01_wifi_kernel_driver/os_linux/driver/../../os_linux/driver/unifi_wext.h:112: warning: passing argument 1 of 'iwe_stream_add_value' from incompatible pointer type
+/home/layna/android/is01_hacked_rom/is01_wifi_kernel_driver/os_linux/driver/../../os_linux/driver/unifi_wext.h:112: warning: passing argument 4 of 'iwe_stream_add_value' from incompatible pointer type
+/home/layna/android/is01_hacked_rom/is01_wifi_kernel_driver/os_linux/driver/../../os_linux/driver/unifi_wext.h:112: warning: passing argument 5 of 'iwe_stream_add_value' makes pointer from integer without a cast
+/home/layna/android/is01_hacked_rom/is01_wifi_kernel_driver/os_linux/driver/../../os_linux/driver/unifi_wext.h:112: error: too few arguments to function 'iwe_stream_add_value'
+In file included from /home/layna/android/is01_hacked_rom/is01_wifi_kernel_driver/os_linux/driver/../../os_linux/driver/sdio_mmc.c:25:
+/home/layna/android/is01_hacked_rom/is01_wifi_kernel_driver/os_linux/driver/../../os_linux/driver/unifi_priv.h:62:5: error: "LINUX_VERSION_CODE" is not defined
+/home/layna/android/is01_hacked_rom/is01_wifi_kernel_driver/os_linux/driver/../../os_linux/driver/unifi_priv.h:62:26: error: "KERNEL_VERSION" is not defined
+/home/layna/android/is01_hacked_rom/is01_wifi_kernel_driver/os_linux/driver/../../os_linux/driver/unifi_priv.h:62:40: error: missing binary operator before token "("
+/home/layna/android/is01_hacked_rom/is01_wifi_kernel_driver/os_linux/driver/../../os_linux/driver/unifi_priv.h:77:5: error: "LINUX_VERSION_CODE" is not defined
+/home/layna/android/is01_hacked_rom/is01_wifi_kernel_driver/os_linux/driver/../../os_linux/driver/unifi_priv.h:77:27: error: "KERNEL_VERSION" is not defined
+/home/layna/android/is01_hacked_rom/is01_wifi_kernel_driver/os_linux/driver/../../os_linux/driver/unifi_priv.h:77:41: error: missing binary operator before token "("
+/home/layna/android/is01_hacked_rom/is01_wifi_kernel_driver/os_linux/driver/../../os_linux/driver/sdio_mmc.c:30:5: error: "LINUX_VERSION_CODE" is not defined
+/home/layna/android/is01_hacked_rom/is01_wifi_kernel_driver/os_linux/driver/../../os_linux/driver/sdio_mmc.c:30:27: error: "KERNEL_VERSION" is not defined
+/home/layna/android/is01_hacked_rom/is01_wifi_kernel_driver/os_linux/driver/../../os_linux/driver/sdio_mmc.c:30:41: error: missing binary operator before token "("
+/home/layna/android/is01_hacked_rom/is01_wifi_kernel_driver/os_linux/driver/../../os_linux/driver/sdio_mmc.c:604:5: error: "LINUX_VERSION_CODE" is not defined
+/home/layna/android/is01_hacked_rom/is01_wifi_kernel_driver/os_linux/driver/../../os_linux/driver/sdio_mmc.c:604:27: error: "KERNEL_VERSION" is not defined
+/home/layna/android/is01_hacked_rom/is01_wifi_kernel_driver/os_linux/driver/../../os_linux/driver/sdio_mmc.c:604:41: error: missing binary operator before token "("
+/home/layna/android/is01_hacked_rom/is01_wifi_kernel_driver/os_linux/driver/../../os_linux/driver/sdio_mmc.c:634:5: error: "LINUX_VERSION_CODE" is not defined
+/home/layna/android/is01_hacked_rom/is01_wifi_kernel_driver/os_linux/driver/../../os_linux/driver/sdio_mmc.c:634:27: error: "KERNEL_VERSION" is not defined
+/home/layna/android/is01_hacked_rom/is01_wifi_kernel_driver/os_linux/driver/../../os_linux/driver/sdio_mmc.c:634:41: error: missing binary operator before token "("
+/home/layna/android/is01_hacked_rom/is01_wifi_kernel_driver/os_linux/driver/../../os_linux/driver/sdio_mmc.c:886:5: error: "LINUX_VERSION_CODE" is not defined
+/home/layna/android/is01_hacked_rom/is01_wifi_kernel_driver/os_linux/driver/../../os_linux/driver/sdio_mmc.c:886:27: error: "KERNEL_VERSION" is not defined
+/home/layna/android/is01_hacked_rom/is01_wifi_kernel_driver/os_linux/driver/../../os_linux/driver/sdio_mmc.c:886:41: error: missing binary operator before token "("
+/home/layna/android/is01_hacked_rom/is01_wifi_kernel_driver/os_linux/driver/../../os_linux/driver/sdio_mmc.c:993:5: error: "LINUX_VERSION_CODE" is not defined
+/home/layna/android/is01_hacked_rom/is01_wifi_kernel_driver/os_linux/driver/../../os_linux/driver/sdio_mmc.c:993:27: error: "KERNEL_VERSION" is not defined
+/home/layna/android/is01_hacked_rom/is01_wifi_kernel_driver/os_linux/driver/../../os_linux/driver/sdio_mmc.c:993:41: error: missing binary operator before token "("
+/home/layna/android/is01_hacked_rom/is01_wifi_kernel_driver/os_linux/driver/../../os_linux/driver/sdio_mmc.c:1093:5: error: "LINUX_VERSION_CODE" is not defined
+/home/layna/android/is01_hacked_rom/is01_wifi_kernel_driver/os_linux/driver/../../os_linux/driver/sdio_mmc.c:1093:27: error: "KERNEL_VERSION" is not defined
+/home/layna/android/is01_hacked_rom/is01_wifi_kernel_driver/os_linux/driver/../../os_linux/driver/sdio_mmc.c:1093:41: error: missing binary operator before token "("
+make[2]: *** [/home/layna/android/is01_hacked_rom/is01_wifi_kernel_driver/os_linux/driver/../../os_linux/driver/sdio_mmc.o] エラー 1
+make[1]: *** [_module_/home/layna/android/is01_hacked_rom/is01_wifi_kernel_driver/os_linux/driver/../../os_linux/driver] エラー 2
+make: *** [modules] エラー 2

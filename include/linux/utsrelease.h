@@ -1,1 +1,1 @@
-#define UTS_RELEASE "2.6.29-perf@hacked_renax64"
+#define UTS_RELEASE "2.6.29-DevRenax"

@@ -358,8 +358,7 @@ static struct file_operations Smb380_ctl_fops = {
 
 static struct miscdevice Smb380_device = {
 	.minor = MISC_DYNAMIC_MINOR,
-//	.name = "smb380_dev",
-	.name = "smb380",
+	.name = "smb380_dev",
 	.fops = &Smb380_ctl_fops,
 };
 

@@ -40,6 +40,11 @@ loglevel 6
     mkdir /cache 0771 system cache
     mkdir /config 0500 root root
 
+# start 2011.06.24
+    mkdir /obex_data_tmp 01777 root root
+    mount tmpfs tmpfs /obex_data_tmp
+# end
+
     # Directory for putting things only root should see.
     mkdir /mnt/secure 0700 root root
 
@@ -146,6 +151,7 @@ loglevel 6
 # create basic filesystem structure
     mkdir /data/misc 01771 system misc
     mkdir /data/misc/bluetoothd 0770 bluetooth bluetooth
+    mkdir /data/misc/hcid 0770 bluetooth bluetooth
     mkdir /data/misc/bluetooth 0770 system system
     mkdir /data/misc/keystore 0700 keystore keystore
     mkdir /data/misc/vpn 0770 system system
@@ -319,14 +325,6 @@ on boot
 # 2010.01.07 SC N.Ishihara
     chmod 0666 /dev/smd_shdiag
 
-#add 20110207
-chown compass system /dev/akm8973_aot
-chmod 666 /dev/akm8973_aot
-chown compass system /dev/akm8973_dev
-chmod 666 /dev/akm8973_dev
-chown compass system /dev/smb380_dev
-chmod 666 /dev/smb380_dev
-
     mkdir /data/data/com.android.providers.settings 0771 system system
     mkdir /data/data/com.android.providers.settings/lib 0755 system system
 #    mkdir /sqlite_journals/com.android.providers.settings 0771 system system
@@ -439,9 +437,9 @@ service media /system/bin/mediaserver
     ioprio rt 4
 
 #fixed 2011.01.28
-#service mediayamaha /system/bin/logwrapper /system/bin/mediayamahaserver
-#    user media
-#    group system audio camera graphics inet net_bt net_bt_admin
+service mediayamaha /system/bin/logwrapper /system/bin/mediayamahaserver
+    user media
+    group system audio camera graphics inet net_bt net_bt_admin
 #end
 
 service bootanim /system/bin/bootanimation
@@ -536,7 +534,7 @@ service wpa_supplicant /system/bin/logwrapper /system/bin/logwrapper /system/bin
     disabled 
     oneshot 
 
-service dhcpcd /system/bin/logwrapper /system/bin/logwrapper /system/bin/dhcpcd wlan0
+service dhcpcd /system/bin/logwrapper /system/bin/dhcpcd wlan0
     group system dhcp 
     disabled 
     oneshot 
@@ -546,10 +544,8 @@ on property:init.svc.wpa_supplicant=stopped
 
 service shsd_process /system/bin/logwrapper /system/bin/shsd_process
 
-#onrestart restart sdservice
-
 #service dtvserver /system/bin/logwrapper /system/bin/dtvserver
-#service sdservice /system/bin/logwrapper /system/bin/sdservice
+service sdservice /system/bin/logwrapper /system/bin/sdservice
 
 service akmd2 /system/bin/logwrapper /system/bin/akmd2
 
@@ -558,15 +554,13 @@ service shusb_process /system/bin/logwrapper /system/bin/shusb_process
 service medousa /system/bin/logwrapper /system/bin/medousa
     group sdcard_rw
 
+# end
+
+# start 2011.06.24
 service obexd /system/bin/logwrapper /system/bin/obexd
+	socket obex_manager stream 660 root mount
 
 #end
 
-#start 20110303
-service compcache /system/bin/logwrapper /sbin/compcache
-    user root
-    group root
-    oneshot
-#end
 
 
